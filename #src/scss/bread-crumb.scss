@@ -1,0 +1,43 @@
+.bread-crumb{
+  padding: 40px 0 50px;
+  @include mq('desktop') {
+    padding: 40px 0 55px;
+  }
+}
+
+.bread-crumb-body{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+  @include mq('tablet') {
+    width: 40%;
+  }
+}
+
+.bread-crumb-body__items{
+
+  a{
+    @include adaptiv-font(14,14);
+    color: #BDBDBD;
+  }
+}
+
+.bread-crumb-title{
+  @include adaptiv-font(36,28);
+  font-weight: 600;
+  width: 100%;
+  @include mq('tablet-990') {
+    //text-align: center;
+    width: 470px;
+  }
+}
+
+
+.wrapper-bread-crumb{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}

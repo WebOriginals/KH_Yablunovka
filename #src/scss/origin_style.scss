@@ -1,0 +1,156 @@
+//-----------------------------
+$background-btn1: #002653;
+$background-btn-color1: #fff;
+$background-btn-hover1: #0069E4;
+//-----------------------------
+$background-btn2: #e28540;
+$background-btn-color2: #fff;
+$background-btn-hover2: #6d2713;
+//-----------------------------
+$color-title: #000;
+$color-sub-title: #000;
+//-----------------------------
+
+
+//*=============================================
+
+%flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+%background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+//=============================================
+
+//==============СКРОЛЛ НА МОБИЛЕ===============
+
+.BLOCK-SCROLL {
+  width: 100%;
+  overflow: auto;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 990px) {
+  .BLOCK-SCROLL_WIDTH {
+    display: flex;
+    width: 100%;
+    padding: 0 15px 0 0;
+  }
+}
+
+//======БЛОКИ ПОКАЗЫНИ И СКРЫТЫ НА МОБИЛЕ======
+
+.MOBILE{
+  @media (min-width: 1199px) {
+    display: none;
+  }
+}
+
+.DESCKTOP{
+  display: none;
+  @media (min-width: 1200px){
+    display: block;
+  }
+}
+
+//*=============================================
+
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+a:hover,
+a:focus{
+  color: inherit;
+  text-decoration: none;
+}
+
+.sec{
+  padding: 60px 0;
+
+  @include mq('tablet') {
+    padding: 60px 0
+  }
+}
+
+.title{
+  @include adaptiv-font(36,24);
+  color:$color-title;
+  font-weight: 600;
+  @include adaptiv-margin-bottom(50,20)
+}
+
+.sub-title{
+  @include adaptiv-font(22,18);
+  color:$color-sub-title;
+}
+
+.button{
+  background: $background-btn1;
+  color: $background-btn-color1;
+  text-align: center;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 1s;
+  width: fit-content;
+  &:hover{
+    background: $background-btn-hover1;
+  }
+}
+
+.POLITICS {
+  @include adaptiv-font(18, 14);
+  margin-top: 10px;
+  margin-bottom: 30px;
+  line-height: 1.2;
+
+  @include mq('tablet-wide') {
+    margin-top: 25px;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.NO-SKROLL {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.NO-OUTLINE{
+  outline: none;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+  .padding-l-0 {
+    padding-left: 0;
+  }
+  .padding-r-0 {
+    padding-right: 0;
+  }
+
+  .padding-l-15 {
+    padding-left: 15px;
+  }
+  .padding-r-15 {
+    padding-right: 15px;
+  }
+}
+
+main{
+  min-height: 50vh;
+}
+//*=============================================

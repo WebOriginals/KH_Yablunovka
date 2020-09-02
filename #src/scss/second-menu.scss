@@ -1,0 +1,23 @@
+.second-menu{
+  padding: 30px 0;
+}
+
+.body-second-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  li{
+    padding: 0 25px;
+    a{
+      color: #222222;
+      @include adaptiv-font(16,16);
+      &:hover{
+        color: #0069E4;
+        text-decoration: none;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #0069E4;
+      }
+    }
+  }
+}

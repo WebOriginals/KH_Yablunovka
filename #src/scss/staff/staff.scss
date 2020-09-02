@@ -1,0 +1,76 @@
+.staff{
+  padding: 0 0 80px;
+  @include mq('desktop-wide') {
+    padding: 20px 0 100px;
+  }
+}
+
+.body-staff{
+  @include adaptiv-margin-bottom(65,50);
+  position: relative;
+}
+.body-staff:hover .staff-info-hover{
+  opacity: 1;
+}
+
+
+
+.staff__img{
+  position: relative;
+  width: 100%;
+  height: 316px;
+  background-size: cover;
+  background-position: center top;
+  @include mq('desktop-wide') {
+    height: 400px;
+  }
+}
+
+.staff__first-name{
+  @include adaptiv-font(24,24);
+  font-weight: 600;
+}
+
+.staff__second-name{
+  @include adaptiv-font(18,24);
+  @include adaptiv-margin-bottom(5,5);
+  font-weight: 600;
+}
+
+.staff__position{
+  @include adaptiv-font(14,14);
+  color: #0069E4;
+}
+
+
+.staff-info-hover{
+  transition: .3s;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  position: absolute;
+  background: #222222;
+  color: white;
+  .staff-descript__title{
+    @include adaptiv-font(24,21);
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  a{
+    color: white;
+    @include adaptiv-font(24,21);
+    font-weight: 300;
+
+  }
+}
+.staff-descript{
+  align-self: center;
+  li{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}

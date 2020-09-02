@@ -1,0 +1,19 @@
+.requisites{
+  padding: 60px 0  25px;
+  @include mq('phone') {
+    padding: 100px 0  50px;
+  }
+}
+
+.requisites-title{
+  @include adaptiv-font(21,21);
+  font-weight: bold;
+  @include adaptiv-margin-bottom(20,30);
+}
+
+.requisites-text {
+  p{
+    @include adaptiv-font(18,14);
+    font-weight: 300;
+  }
+}

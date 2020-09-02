@@ -1,0 +1,32 @@
+.container-items {
+  padding-left: 30px;
+  background: left no-repeat;
+  @include adaptiv-font(18, 14);
+  font-weight: 300;
+  margin-bottom: 20px;
+  a {
+    color: #222222;
+    @include adaptiv-font(18, 14);
+    font-weight: 300;
+  }
+}
+
+.contact-soc {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  @include mq('desktop') {
+    margin-top: 40px;
+  }
+
+  li {
+    margin: 0 10px;
+    display: flex;
+    @include mq('desktop') {
+      margin: 0 15px;
+    }
+    a {
+      align-self: center;
+    }
+  }
+}

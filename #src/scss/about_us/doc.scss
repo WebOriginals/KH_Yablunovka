@@ -1,0 +1,42 @@
+.doc{
+  padding: 25px 0  100px;
+  @include mq('phone') {
+    padding: 50px 0  150px;
+  }
+}
+
+.doc-items{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  .doc__ic-title{
+    display: flex;
+
+    cursor: pointer;
+    margin-bottom: 30px;
+    &:hover .doc__text{
+      color: #0069E4;
+    }
+    @include mq('desktop') {
+      width: 50%;
+    }
+  }
+}
+.doc__ic{
+  align-self: center;
+  margin-right: 20px;
+  flex:0 0 32px;
+}
+
+.doc__text{
+  align-self: center;
+  @include adaptiv-font(18, 14);
+  font-weight: 300;
+}
+
+.doc-title{
+  @include adaptiv-font(36, 21);
+  font-weight: 600;
+  @include adaptiv-margin-bottom(50,20)
+}

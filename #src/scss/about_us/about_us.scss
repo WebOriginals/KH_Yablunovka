@@ -1,0 +1,41 @@
+.body-text-left {
+  p {
+    @include adaptiv-font(18, 14);
+    font-weight: 300;
+  }
+
+  h5 {
+    font-weight: bold;
+    @include adaptiv-font(18, 14);
+
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    li{
+      padding-left: 30px;
+      background-image: url('../img/ic/li.png') ;
+      background-position: left top;
+      margin-bottom: 10px;
+      background-repeat: no-repeat;
+      &:last-child{
+        margin-bottom: 0px;
+      }
+      @include mq('2K') {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.body-img-left {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include mq('2K') {
+    background-position: center right;
+  }
+}

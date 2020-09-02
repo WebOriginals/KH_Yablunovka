@@ -1,0 +1,112 @@
+.main-services{
+  padding:  50px 0;
+  @include mq('desktop') {
+    padding: 75px 0;
+  }
+}
+
+.body-services{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-title{
+  width: 100%;
+}
+.wrapper-services-item{
+  width: 100%;
+  padding: 10px 0;
+  @include mq('tablet') {
+    padding: 10px;
+    width: 50%;
+  }
+}
+
+.services-column{
+  background: #F2F2F2;
+  border-radius: 5px;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.services-column__title{
+  @include adaptiv-font(24,21);
+  font-weight: bold;
+  @include adaptiv-margin-bottom(20,10);
+}
+
+.services-column__descripnio{
+  font-weight: 300;
+  @include adaptiv-font(18,14);
+  @include adaptiv-margin-bottom(70,40);
+
+}
+
+.services-column__tipe{
+  @include adaptiv-font(24,18);
+}
+
+.services-column__price-body{
+  width: 118px;
+  height: 124px;
+  background: #0069E4;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -48px;
+  right: -28px;
+  @include mq('phone-midle') {
+    width: 138px;
+    height: 154px;
+    bottom: -77px;
+    right: -38px;;
+  }
+  @include mq('phablet') {
+    width: 138px;
+    height: 154px;
+    bottom: -77px;
+    right: -38px;;
+  }
+  @include mq('tablet') {
+    width: 158px;
+    height: 164px;
+    bottom: -77px;
+    right: -38px;;
+  }
+  @include mq('tablet-wide') {
+    width: 205.27px;
+    height: 216px;
+    bottom: -112px;
+    right: -53px;
+  }
+  @include mq('desktop-wide') {
+    width: 205.27px;
+    height: 216px;
+    bottom: -112px;
+    right: -53px;
+  }
+  @include mq('2K') {
+    width: 245.27px;
+    height: 256px;
+    bottom: -123px;
+    right: -53px;
+  }
+}
+
+.services-column__price{
+  @include adaptiv-font(36,24);
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  text-align: right;
+  bottom: 17px;
+  right: 15px;
+  @include mq('phone') {
+
+  }
+  span{
+    display: block;
+    @include adaptiv-font(18,10);
+  }
+}

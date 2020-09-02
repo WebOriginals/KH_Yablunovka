@@ -1,0 +1,46 @@
+.services-internal{
+  padding: 0 0 80px 0;
+  @include mq('tablet-990') {
+    padding:  0 0 100px 0;
+  }
+}
+
+.body-services-internal-items__img{
+  height: 100%;
+  background: center center no-repeat;
+background-size: cover;
+}
+
+.services-inp{
+  border: 1px solid #C4C4C4;
+  padding: 10px;
+  width: 100%;
+  &.room{
+    width: 240px;
+  }
+  &::placeholder{
+    color: #C4C4C4;
+    font-weight: 300;
+  }
+}
+.wrapper-inp{
+  margin-bottom: 20px;
+
+  p{
+    margin-bottom: 0px;
+    span{
+      color: red;
+    }
+  }
+}
+
+.services-form textarea{
+height: 100px;
+}
+.services-form-btn{
+  background: #0069e4;
+}
+
+.services-label{
+  margin-right: 50px;
+}

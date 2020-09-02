@@ -1,0 +1,31 @@
+@import "mixins.scss";
+@import "reset_style.scss";
+@import "origin_style.scss";
+@import "fonts";
+@import "bread-crumb.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "pagination.scss";
+@import "modal.scss";
+@import "menu-mobile.scss";
+@import "main/sl-head.scss";
+@import "main/sl-textUser.scss";
+@import "main/services.scss";
+@import "main/sl-our-work.scss";
+
+@import "main/news.scss";
+@import "news/news-internal.scss";
+@import "news/news.scss";
+@import "staff/staff.scss";
+@import "user/user.scss";
+@import "about_us/about_us.scss";
+@import "about_us/requisites.scss";
+@import "about_us/doc.scss";
+@import "information-disclosure/info.scss";
+@import "contacts/contact.scss";
+@import "contacts/map.scss";
+
+@import "shutdown/shutdown-internal.scss";
+@import "second-menu.scss";
+@import "services/services-main.scss";
+@import "services/services-internal.scss";
